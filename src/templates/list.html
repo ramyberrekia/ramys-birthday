@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block body %}
+{% for message in bd_messages %}
+    <div class="bg-white py-6 sm:py-8 lg:py-12">
+        <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
+          <div class="flex flex-col items-center rounded-lg bg-gray-100 p-4 sm:p-8 lg:flex-row lg:justify-between">
+            <p class="text-center text-gray-500 lg:text-left">{{message.message}}</p>
+
+          </div>
+        </div>
+      </div><br>
+{% endfor %}
+{% endblock  %}
